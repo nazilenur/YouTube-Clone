@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YouTube Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video.css?v=2">  
+    <link rel="stylesheet" href="styles/header.css?v=1">
+    <link rel="stylesheet" href="styles/sidebar.css">
+     
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="menu" >
+        <img src="icons/youtube-logo.svg" class="youtube-logo">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar"  type="text" placeholder="Search">
+        <button class="search-button">
+          <img src="icons/search.svg" class="search-icon" >
+        </button>
+        <button class="voice-search-button">
+          <img src="icons/voice-search-icon.svg" class="voice-search-icon" >
+          <div class="tooltip">Search with voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="icons/upload-svgrepo-com.svg" class="upload-icon" >
+          <div class="tooltip">Upload</div>
+        </div>
+        <div class="apps-icon-container">
+          <img src="icons/youtube-apps.svg" class="apps-icon">
+          <div class="tooltip">Apps</div>
+        </div>
+        <div class="notification-icon-container">
+          <img src="icons/notifications.svg" class="notification-icon">
+          <div class="notification-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img src="ProfilePictures/youtube-profile.jpg " class="user-channel-picture">
+      </div>  
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subsriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <!--first video-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=0e3GPea1Tyg">
+              <img class="thumbnail" src="thumbnails/mrBeast.jpg">
+            </a>   
+          <div class="video-time">25:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@MrBeast">
+              <img class="profile-picture" src="ProfilePictures/MrBeast-pp.jpg">
+            </a>
+            <div class="channel-tooltip">
+            <img src="ProfilePictures/MrBeast-pp.jpg" class="channel-tooltip-picture">
+            <div>
+              <div class="channel-tooltip-name">Mr.Beast</div>
+              <div class="channel-tooltip-stats">389M subscribers</div>
+            </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=0e3GPea1Tyg">
+              <p class="video-title">$456,000 Squid Game In Real Life!</p>
+            </a>
+            <div>
+              <a href=" ">
+                <p class="video-author">Mr.Beast</p>
+              </a>
+            </div>
+            <p class="video-stats">7.56M Views &#183; 3 years ago  </p>
+          </div>
+        </div>
+      </div>
+          <!--sec video-->
+        <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=vytrCSYXi5w">
+                <img class="thumbnail" src="thumbnails/nikocadoAvocado.webp">
+              </a>
+            <div class="video-time">31:36</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@NikocadoAvocado">
+                <img class="profile-picture" src="ProfilePictures/nikocadoAvacoda-pp.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img src="ProfilePictures/nikocadoAvacoda-pp.jpg" class="channel-tooltip-picture">
+                <div>
+                  <div class="channel-tooltip-name">Nikocado Avacado</div>
+                  <div class="channel-tooltip-stats">4.63M subscribers</div>
+                </div>
+                </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=vytrCSYXi5w">
+                <p class="video-title">SUPER SPICY FIRE RAMEN NOODLES</p>
+              </a>
+              <div>
+                <a href="">
+                  <p class="video-author">Nikocado Avocado</p>
+                </a>
+              </div>
+              <p class="video-stats">3M Views &#183; 3 years ago  </p>
+            </div>
+          </div>
+        </div>
+          <!--third video-->
+        <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=vqYwuxfIwOA">
+                <img class="thumbnail" src="thumbnails/orkun-thumbnail.jpg">
+              </a>
+            <div class="video-time">31:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@orkunisitmak">
+                <img class="profile-picture" src="ProfilePictures/orkunisitmak.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img src="ProfilePictures/orkunisitmak.jpg" class="channel-tooltip-picture">
+                <div>
+                  <div class="channel-tooltip-name">Orkun Işıtmak</div>
+                  <div class="channel-tooltip-stats">11.8M subscribers</div>
+                </div>
+                </div>  
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=vqYwuxfIwOA">
+                <p class="video-title">GECE GİZLİCE SPOR SALONUNDA KALMAK! ft. @muratabigf</p>
+              </a>
+              <div>
+                <a href="">
+                  <p class="video-author">Orkun Işıtmak</p>
+                </a>
+              </div>
+              <p class="video-stats">6.4M Views &#183;3 years ago  </p>
+            </div>
+          </div>
+        </div>
+          <!--fourth video-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=6wf_ehrit1Y">
+              <img class="thumbnail" src="thumbnails/OhaDiyorum.avif">
+            </a>
+          <div class="video-time">1:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@OhaaDiyorum">
+              <img class="profile-picture" src="ProfilePictures/oha-diyorum-pp.jpg">
+            </a>
+            <div class="channel-tooltip">
+              <img src="ProfilePictures/oha-diyorum-pp.jpg" class="channel-tooltip-picture">
+              <div>
+                <div class="channel-tooltip-name">OHA DİYORUM!</div>
+                <div class="channel-tooltip-stats">5.57M subscribers</div>
+              </div>
+              </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=6wf_ehrit1Y">
+              <p class="video-title">Tarçın Yutunca Ne Olur? - Sakın Denemeyin!</p>
+            </a>
+            <p class="video-author">OHA DİYORUM!</p>
+            <p class="video-stats">957K Views &#183; 10 years ago  </p>
+          </div>
+        </div>
+       </div>
+       <!--fifth video-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=HtQLaxZ4x34">
+              <img class="thumbnail" src="thumbnails/pewDiePie.jpg">
+            </a>
+          <div class="video-time">7:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@PewDiePie">
+              <img class="profile-picture" src="ProfilePictures/pewdiepie-pp.jpg">
+            </a>
+            <div class="channel-tooltip">
+              <img src="ProfilePictures/pewdiepie-pp.jpg" class="channel-tooltip-picture">
+              <div>
+                <div class="channel-tooltip-name">PewDiePie</div>
+                <div class="channel-tooltip-stats">110M subscribers</div>
+              </div>
+              </div>    
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=HtQLaxZ4x34">
+              <p class="video-title">CHUBBY BUNNY - (Fridays With PewDiePie - Part 25)</p>
+            </a>
+            <a href="">
+             <p class="video-author">PewDiePie</p> 
+            </a>
+            <p class="video-stats">2.9M Views &#183; 13 years ago  </p>
+          </div>
+        </div>
+      </div>
+      <!--sixth video-->
+       <div class="video-preview">
+        <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/burak-oyunda-minecraft-thumbnail.jpg">
+        <div class="video-time">28:21</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/watch?v=L2qMS2BzW1U">
+           <img class="profile-picture" src="ProfilePictures/burakOyunda-pp.jpg">
+          </a>
+          <div class="channel-tooltip">
+            <img src="ProfilePictures/burakOyunda-pp.jpg" class="channel-tooltip-picture">
+            <div>
+              <div class="channel-tooltip-name">BurakOyunda</div>
+              <div class="channel-tooltip-stats">3.46M subscribers</div>
+            </div>
+            </div>
+        </div>
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=L2qMS2BzW1U">
+            <p class="video-title">Minecraft Modlu Survival - Doctor Yarasa - Bölüm 2</p>
+          </a>
+          <a href="">
+            <p class="video-author">BurakOyunda</p>
+          </a>
+          <p class="video-stats"> 1M &#183; 10 years ago  </p>
+        </div>
+      </div>
+    </div>
+
+        <!--seventh video-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=3wo7qr6PIU4">
+              <img class="thumbnail" src="thumbnails/nefis-yemek-thumbnail.jpg">
+            </a>   
+          <div class="video-time">25:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@NefisYemekTarifleri">
+             <img class="profile-picture" src="ProfilePictures/nefis-yememk-pp.jpg"> 
+            </a>
+            <div class="channel-tooltip">
+              <img src="ProfilePictures/nefis-yememk-pp.jpg" class="channel-tooltip-picture">
+              <div>
+                <div class="channel-tooltip-name">Nefis Yemek Tarifleri</div>
+                <div class="channel-tooltip-stats">6.17M subscribers</div>
+              </div>
+              </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/@NYT">
+              <p class="video-title">EN LEZZETLİ Tavuk Sote Tarifi - Nefis Yemek Tarifleri</p>
+            </a>
+            <a href="">
+              <p class="video-author">Nefis Yemek Tarifleri</p>
+            </a>
+            <p class="video-stats">13M Views &#183; 6 years ago  </p>
+          </div>
+        </div>
+      </div>
+
+          <!--eighth video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=dy1GGrn525w">
+                <img class="thumbnail" src="thumbnails/medcezir-yhumbnail.avif">
+              </a>
+            <div class="video-time">1:44:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Medcezirtvdizisi">
+                <img class="profile-picture" src="ProfilePictures/medcezir-pp.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img src="ProfilePictures/medcezir-pp.jpg" class="channel-tooltip-picture">
+                <div>
+                  <div class="channel-tooltip-name">Medcezir</div>
+                  <div class="channel-tooltip-stats">186K subscribers</div>
+                </div>
+                </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=dy1GGrn525w">
+                <p class="video-title">Medcezir 3. Bölüm (4K)</p>
+              </a>
+              <div>
+                <a href="https://www.youtube.com/@Medcezirtvdizisi">
+                  <p class="video-author">Medcezir</p>
+                </a>
+              </div>
+              <p class="video-stats">7.7K Views &#183; 1 day ago  </p>
+            </div>
+          </div>
+        </div>
+
+        <!--ninth video-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="hhttps://www.youtube.com/watch?v=PtZG6lLzFaQ">
+              <img class="thumbnail" src="thumbnails/billie-pp.avif">
+            </a>
+          <div class="video-time">35:43</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@Tyllon768">
+              <img class="profile-picture" src="ProfilePictures/billie.jpg">
+            </a>
+            <div class="channel-tooltip">
+              <img src="ProfilePictures/billie.jpg" class="channel-tooltip-picture">
+              <div>
+                <div class="channel-tooltip-name">Tyllon</div>
+                <div class="channel-tooltip-stats">300 subscribers</div>
+              </div>
+              </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=PtZG6lLzFaQ">
+              <p class="video-title">Billie Eilish Playlist of Unreleased Songs - Part 1</p>
+            </a>
+            <div>
+              <a href="https://www.youtube.com/@Tyllon768">
+                <p class="video-author">Tyllon</p>
+              </a>
+            </div>
+            <p class="video-stats">81K Views &#183; 2 month ago  </p>
+          </div>
+        </div>
+      </div>
+
+              <!--tenth video-->
+              <div class="video-preview">
+                <div class="thumbnail-row">
+                  <a href="https://www.youtube.com/watch?v=kcCGHpwGETo&t=1s">
+                    <img class="thumbnail" src="thumbnails/evrim-agaci.jpg">
+                  </a>
+                <div class="video-time">26:08</div>
+              </div>
+              <div class="video-info-grid">
+                <div class="channel-picture">
+                  <a href="https://www.youtube.com/@evrimagaci/videos">
+                    <img class="profile-picture" src="ProfilePictures/evrim-agaci-pp.jpg">
+                  </a>
+                  <div class="channel-tooltip">
+                    <img src="ProfilePictures/evrim-agaci-pp.jpg" class="channel-tooltip-picture">
+                    <div>
+                      <div class="channel-tooltip-name">Evrim Ağacı</div>
+                      <div class="channel-tooltip-stats">4.36M subscribers</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                  <a href="https://www.youtube.com/watch?v=kcCGHpwGETo&t=1s">
+                    <p class="video-title">Sezaryenle Doğuran Anneler "Anormal" mi?</p>
+                  </a>
+                  <div>
+                    <a href="https://www.youtube.com/@Tyllon768">
+                      <p class="video-author">Tyllon</p>
+                    </a>
+                  </div>
+                  <p class="video-stats">81K Views &#183; 2 month ago  </p>
+                </div>
+              </div>
+            </div>
+      
+                    <!--eleventh video-->
+                    <div class="video-preview">
+                      <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=4rkJ13f8P14">
+                          <img class="thumbnail" src="thumbnails/caseoh.avif">
+                        </a>
+                      <div class="video-time">1:01:39</div>
+                    </div>
+                    <div class="video-info-grid">
+                      <div class="channel-picture">
+                        <a href="https://www.youtube.com/@caseoh_">
+                          <img class="profile-picture" src="ProfilePictures/caseoh-pp.jpg">
+                        </a>
+                        <div class="channel-tooltip">
+                          <img src="ProfilePictures/caseoh-pp.jpg" class="channel-tooltip-picture">
+                          <div>
+                            <div class="channel-tooltip-name">CaseOh</div>
+                            <div class="channel-tooltip-stats">7.9M subscribers</div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=4rkJ13f8P14">
+                          <p class="video-title">I Went To The Wrong House…</p>
+                        </a>
+                        <div>
+                          <a href="https://www.youtube.com/@Tyllon768">
+                            <p class="video-author">CaseOh</p>
+                          </a>
+                        </div>
+                        <p class="video-stats">1M Views &#183; 1 years ago  </p>
+                      </div>
+                    </div>
+                  </div>
+            
+
+              <!--twelveth video-->
+              <div class="video-preview">
+                <div class="thumbnail-row">
+                  <a href="https://www.youtube.com/watch?v=MK6WIl1YtvM">
+                    <img class="thumbnail" src="thumbnails/cat-thumbnail.avif">
+                  </a>
+                <div class="video-time">19:20</div>
+              </div>
+              <div class="video-info-grid">
+                <div class="channel-picture">
+                  <a href="https://www.youtube.com/@girlwiththedogs2">
+                    <img class="profile-picture" src="ProfilePictures/girl-with-the-dogs2.jpg">
+                  </a>
+                  <div class="channel-tooltip">
+                    <img src="ProfilePictures/girl-with-the-dogs2.jpg" class="channel-tooltip-picture">
+                    <div>
+                      <div class="channel-tooltip-name">Girl With The Dogs 2</div>
+                      <div class="channel-tooltip-stats">1.21M subscribers</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                  <a href="https://www.youtube.com/watch?v=MK6WIl1YtvM">
+                    <p class="video-title">He Ate The Whole Bakery And Left No Crumbs | Bean The 26 Pound Cat</p>
+                  </a>
+                  <div>
+                    <a href="https://www.youtube.com/@Tyllon768">
+                      <p class="video-author">Girl With The Dogs 2</p>
+                    </a>
+                  </div>
+                  <p class="video-stats">3.1M Views &#183; 9 month ago  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--13-->
+            <div class="video-preview">
+              <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=dNtgM__yKcw">
+                  <img class="thumbnail" src="thumbnails/kardelen-yildrim.jpg">
+                </a>
+              <div class="video-time">35:43</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@KardelenYldrm">
+                  <img class="profile-picture" src="ProfilePictures/kardelen-yildirim-pp.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img src="ProfilePictures/kardelen-yildirim-pp.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Kardelen Yıldırım</div>
+                    <div class="channel-tooltip-stats">383K subscribers</div>
+                  </div>
+                  </div>
+              </div>
+              <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=dNtgM__yKcw">
+                  <p class="video-title">DERTLEŞİYORUZ | Toksik İlişkiler 👹 Kendini sevme, Hayat güncellemesi</p>
+                </a>
+                <div>
+                  <a href="https://www.youtube.com/@Tyllon768">
+                    <p class="video-author">Kardelen Yıldırım</p>
+                  </a>
+                </div>
+                <p class="video-stats">218K Views &#183; 2 years ago  </p>
+              </div>
+            </div>
+          </div>
+
+          <!--14-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=3FV407gsiOU">
+                <img class="thumbnail" src="thumbnails/dreamworks.jpg">
+              </a>
+            <div class="video-time">27:25</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Tyllon768">
+                <img class="profile-picture" src="ProfilePictures/jesse-jokes-pp.jpg">
+              </a>
+              <div class="channel-tooltip">
+                <img src="ProfilePictures/jesse-jokes-pp.jpg" class="channel-tooltip-picture">
+                <div>
+                  <div class="channel-tooltip-name">Jesse Joks</div>
+                  <div class="channel-tooltip-stats">186K subscribers</div>
+                </div>
+                </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=3FV407gsiOU">
+                <p class="video-title">Ranking Every DreamWorks Villain (Worst to Best)
+                </p>
+              </a>
+              <div>
+                <a href="https://www.youtube.com/@JesseJokes">
+                  <p class="video-author">Jesse Joks</p>
+                </a>
+              </div>
+              <p class="video-stats">7.6M Views &#183; 1 years ago  </p>
+            </div>
+          </div>
+        </div>
+
+        <!--15-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=YOsVpoe5tzY">
+              <img class="thumbnail" src="thumbnails/maya-thumbnail.jpg">
+            </a>
+          <div class="video-time">8:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@Tyllon768">
+              <img class="profile-picture" src="ProfilePictures/maya-pp.jpg">
+            </a>
+            <div class="channel-tooltip">
+              <img src="ProfilePictures/maya-pp.jpg" class="channel-tooltip-picture">
+              <div>
+                <div class="channel-tooltip-name">Maya</div>
+                <div class="channel-tooltip-stats">1.01M subscribers</div>
+              </div>
+              </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=YOsVpoe5tzY">
+              <p class="video-title">I interviewed animals with a tiny mic again</p>
+            </a>
+            <div>
+              <a href="https://www.youtube.com/@Tyllon768">
+                <p class="video-author">Maya</p>
+              </a>
+            </div>
+            <p class="video-stats">39M Views &#183; 3 years ago  </p>
+          </div>
+        </div>
+      </div>
+
+      <!--16-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=7oiIovkCHCc">
+            <img class="thumbnail" src="thumbnails/once-said-thumbnail.jpg">
+          </a>
+        <div class="video-time">10:17</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@tvcringes">
+            <img class="profile-picture" src="ProfilePictures/tv-cringes-pp.jpg">
+          </a>
+          <div class="channel-tooltip">
+            <img src="ProfilePictures/tv-cringes-pp.jpg" class="channel-tooltip-picture">
+            <div>
+              <div class="channel-tooltip-name">Tv Cringes</div>
+              <div class="channel-tooltip-stats">1.1K subscribers</div>
+            </div>
+            </div>
+        </div>
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=7oiIovkCHCc">
+            <p class="video-title">Cringe Krizi! Türk tv cringe anlar once said</p>
+          </a>
+          <div>
+            <a href="https://www.youtube.com/@Tyllon768">
+              <p class="video-author">Tv Cringes</p>
+            </a>
+          </div>
+          <p class="video-stats">212K Views &#183; 13 days ago  </p>
+        </div>
+      </div>
+    </div>
+
+    <!--17-->
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=RlfooqeZcdY">
+          <img class="thumbnail" src="thumbnails/netflix-thumbnail.jpg">
+        </a>
+      <div class="video-time">1:58</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <a href="https://www.youtube.com/@Netflix">
+          <img class="profile-picture" src="ProfilePictures/netflix-pp.jpg">
+        </a>
+        <div class="channel-tooltip">
+          <img src="ProfilePictures/netflix-pp.jpg" class="channel-tooltip-picture">
+          <div>
+            <div class="channel-tooltip-name">Netflix</div>
+            <div class="channel-tooltip-stats">30.3M subscribers</div>
+          </div>
+          </div>
+      </div>
+      <div class="video-info">
+        <a href="https://www.youtube.com/watch?v=RlfooqeZcdY">
+          <p class="video-title">The Platform | Main Trailer | Netflix</p>
+        </a>
+        <div>
+          <a href="https://www.youtube.com/@Tyllon768">
+            <p class="video-author">Netflix</p>
+          </a>
+        </div>
+        <p class="video-stats">12M Views &#183; 5 years ago  </p>
+      </div>
+    </div>
+  </div>
+
+  <!--18-->
+  <div class="video-preview">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=Ub19UehR8rc">
+        <img class="thumbnail" src="thumbnails/finch-thumbnail.jpg">
+      </a>
+    <div class="video-time">35:43</div>
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-picture">
+      <a href="https://www.youtube.com/@DavidFinchartist">
+        <img class="profile-picture" src="ProfilePictures/david-finch-pp.jpg">
+      </a>
+      <div class="channel-tooltip">
+        <img src="ProfilePictures/david-finch-pp.jpg" class="channel-tooltip-picture">
+        <div>
+          <div class="channel-tooltip-name">David Finch</div>
+          <div class="channel-tooltip-stats">524K subscribers</div>
+        </div>
+        </div>
+    </div>
+    <div class="video-info">
+      <a href="https://www.youtube.com/watch?v=Ub19UehR8rc">
+        <p class="video-title">How To Draw Figures in Perspective</p>
+      </a>
+      <div>
+        <a href="https://www.youtube.com/@Tyllon768">
+          <p class="video-author">David Finch</p>
+        </a>
+      </div>
+      <p class="video-stats">1.1M Views &#183; 4 years ago  </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+      
+
+  
+  </section>
+    </main>
+
+    
+    <!--we lost background-color when we use position:fixed-->
+
+
+  </body>
+</html>
