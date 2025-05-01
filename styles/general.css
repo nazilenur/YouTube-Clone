@@ -1,0 +1,7 @@
+body{
+  font-family: roboto,arial;/* we used here inheritance*/
+  padding:80px 50px 0 100px;
+  background-color: rgb(241, 241, 241);
+  height: 2000px;
+  overflow-x: hidden;
+}

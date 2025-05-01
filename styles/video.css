@@ -1,0 +1,178 @@
+.video-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 40px;
+  margin-top: 30px;
+
+}
+
+@media (max-width:1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width:999px) and(max-width:1599px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+
+
+@media (min-width:1600px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
+
+
+
+.video-preview {
+  width: 100%;
+
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+  left: 20px;
+  right: 20px;
+
+
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 16px;
+  cursor: pointer;
+  transform: border-radius 0.15s;
+
+}
+
+.thumbnail:hover{
+  border-radius: 0px;
+}
+.video-time{
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 16px;
+  right: 10px;
+  color: white;
+  background-color: black;
+  padding: 4px 5px 4px 5px;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+  position: relative;
+  left: 20px;
+  right: 20px;
+  
+}
+
+.channel-picture {
+  width: 46px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.channel-tooltip{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(194, 194, 194);
+  color: white;
+  width:200px ;
+  height: 55px;
+  padding: 12px 8px 12px 8px;
+  border-radius: 6px;
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+  font-size: 12px;
+  bottom:-30px;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+
+}
+
+.channel-picture:hover .channel-tooltip{
+  opacity: 0.9;
+}
+
+.channel-tooltip-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 8px;
+}
+
+.channel-tooltip-name{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.channel-tooltip-stats{
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.video-author {
+  font-size: 15px;
+  color: rgb(96, 96, 96);
+  transform: color 0.2s;
+  cursor: pointer;
+  margin: 0;
+}
+
+.video-author:hover{
+  color: rgb(204, 204, 204);
+}
+
+.video-stats {
+  font-size: 15px;
+  color: rgb(96, 96, 96);
+  margin-top: 2px;
+}
